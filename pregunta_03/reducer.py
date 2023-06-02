@@ -3,7 +3,9 @@
 import sys
 
 if __name__ == '__main__':
+     
+    dicc={}
 
     for line in sys.stdin:        
-        line=line.strip()
+        key, value = line.split(" ")
         sys.stdout.write("{},{}\n".format(line.split(",")[1],line.split(",")[0]))
